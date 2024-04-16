@@ -7,6 +7,58 @@
   <link rel="stylesheet" type="text/css" href="./css/styles.css"
 </head>
 <body>
+  <hader>
+    <!--Barra de navegación fija:-->
+    <div class="container-xl">
+      <nav class="fixed-top navbar navbar-expand-lg bg-body px-3 px-lg-0 pt-4 pt-lg-5 pb-3">
+        <div class="container-xl align-items-center">
+          <a class="navbar-brand ms-lg-5" href="#">
+            <img src="./assets/logo-bookmark.svg" alt="Logo Marca">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./assets/icon-hamburger.svg" alt="hamburguer menu">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">        
+              <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 pe-lg-5 me-lg-4 align-items-center" id="listaMenu"> 
+                <li class="nav-item">
+                  <a class="nav-link mx-2 fw-bold" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 fw-bold" href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 fw-bold" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-secondary mx-2 py-2 px-4 p-3 mb-2 bg-danger text-white fw-bold border-2 rounded-2"
+                    type="button">LOGIN</a>
+                </li>  
+              </ul>                        
+          </div>
+        </div>
+      </nav>    
+    </div>
+  </hader>
+  <!--GRID PRIMERA PANTALLA-->
+  <section class="container-xl mt-5">
+    <div class="row justify-content-center align-items-center pt-5 mt-5 ms-lg-4">
+      <div class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0">
+        <h1 class="mb-3 mx-5 mx-lg-0">A Simple Bookmarkb<br> Manager</h1>
+        <p class="text-black-50 mb-4 mx-5 mx-lg-0 pe-lg-5">A clean and simple interface to organize your favorite website. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="buttons">
+          <button class="btn btn-primary me-3 px-3 py-2 border-2 shadow-sm"><span class="small">Get it on Chrome</span></button>
+          <button class="btn btn-light me-3 px-3 py-2 border-2 shadow-sm"><span class="small">Get it on Firefox</span></button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 order-1 order-lg-2 mt-5 mb-5 mb-lg-0 text-center position-relative">
+        <img class="img-fluid" src="./assets/illustration-hero.svg" alt="Illustration hero">
+        <div class="blue-form-right bg-primary"></div>
+      </div>
+    </div>
+  </section>
+
   
 </body>
 </html>

@@ -1,1 +1,19 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//ESTILOS PROPIOS, MODIFICACIONES DE BOOTSTRAP:
+$primary: #5265e1;
+$secondary: #fa5959;
+
+body{
+	overflow-x: hidden;
+}
+  .blue-form-right {
+	  position: absolute;
+	  z-index: -1;
+	  width: 90%;
+	  height: 70%;
+	  top: 30%;
+	  left: 30%;
+    background: $primary;
+    border-end-start-radius: 50em;
+  }
