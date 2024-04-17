@@ -1,6 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-//ESTILOS PROPIOS, MODIFICACIONES DE BOOTSTRAP:
 $primary: #5265e1;
 $secondary: #fa5959;
 
@@ -14,6 +13,35 @@ body{
 	  height: 70%;
 	  top: 30%;
 	  left: 30%;
-    background: $primary;
     border-end-start-radius: 50em;
   }
+  .blue-form-left {
+    position: absolute;
+	  z-index: -1;
+	  width: 90%;
+	  height: 95%;
+	  top: 25%;
+	  right: 25%;
+    border-bottom-right-radius: 50em;
+  }  
+  //CSS para modificar Bootstrap:
+  .navbar-nav .nav-item .nav-link {
+    letter-spacing: 0.1rem;
+    font-size: 0.65rem;
+  }
+  
+  .nav-tabs .nav-item .nav-link.active {
+    color: $dark;
+    border-bottom: 0.25rem solid $secondary;
+  }
+  
+  .nav-tabs .nav-item .nav-link {
+    color: $gray-600;
+    border: none;
+  }
+  
+  .nav .nav-item .nav-link {
+    letter-spacing: 0.1rem;
+    font-size: 0.85rem;
+  }  
+  

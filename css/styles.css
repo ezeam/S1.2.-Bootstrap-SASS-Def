@@ -11855,8 +11855,37 @@ body {
   height: 70%;
   top: 30%;
   left: 30%;
-  background: #5265e1;
   border-end-start-radius: 50em;
+}
+
+.blue-form-left {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  height: 95%;
+  top: 25%;
+  right: 25%;
+  border-bottom-right-radius: 50em;
+}
+
+.navbar-nav .nav-item .nav-link {
+  letter-spacing: 0.1rem;
+  font-size: 0.65rem;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #212529;
+  border-bottom: 0.25rem solid #fa5959;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #6c757d;
+  border: none;
+}
+
+.nav .nav-item .nav-link {
+  letter-spacing: 0.1rem;
+  font-size: 0.85rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

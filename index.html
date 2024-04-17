@@ -6,12 +6,13 @@
   <title>S1.2.Bootstrap</title>
   <link rel="stylesheet" type="text/css" href="./css/styles.css"
 </head>
+<!--Arreglar el burguer menu en movil, no queda igual que en el diseño-->
 <body>
   <hader>
     <!--Barra de navegación fija:-->
     <div class="container-xl">
       <nav class="fixed-top navbar navbar-expand-lg bg-body px-3 px-lg-0 pt-4 pt-lg-5 pb-3">
-        <div class="container-xl align-items-center">
+        <div class="container-xl align-items-center mt-15">
           <a class="navbar-brand ms-lg-5" href="#">
             <img src="./assets/logo-bookmark.svg" alt="Logo Marca">
           </a>
@@ -45,7 +46,7 @@
   <section class="container-xl mt-5">
     <div class="row justify-content-center align-items-center pt-5 mt-5 ms-lg-4">
       <div class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0">
-        <h1 class="mb-3 mx-5 mx-lg-0">A Simple Bookmarkb<br> Manager</h1>
+        <h1 class="mb-3 mx-5 mx-lg-0">A Simple Bookmark<br> Manager</h1>
         <p class="text-black-50 mb-4 mx-5 mx-lg-0 pe-lg-5">A clean and simple interface to organize your favorite website. Open a new browser tab and see your sites load instantly. Try it for free.</p>
         <div class="buttons">
           <button class="btn btn-primary me-3 px-3 py-2 border-2 shadow-sm"><span class="small">Get it on Chrome</span></button>
@@ -55,6 +56,81 @@
       <div class="col-12 col-lg-6 order-1 order-lg-2 mt-5 mb-5 mb-lg-0 text-center position-relative">
         <img class="img-fluid" src="./assets/illustration-hero.svg" alt="Illustration hero">
         <div class="blue-form-right bg-primary"></div>
+      </div>
+    </div>
+  </section>
+  <!-- GRID SEGUNDA PANTALLA Y NAV-TAB-->
+  <section class="container-xl mt-5" id="features">
+    <div class="row">
+      <div class="col-12 col-lg-6 m-auto text-center mt-5 px-1">
+        <h3>Features</h3>
+        <p class="text-black-50 mb-4 mx-5 mx-lg-0 mt-2 mt-lg-4">Our aim is to make it quick and easy for you to access your favouriten websites. Your bookmarks sync between your devices so you can access	them on the go.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <ul class="nav nav-tabs flex-column align-items-center flex-lg-row justify-content-between col-12 col-lg-7 p-lg-0 "
+      id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active px-lg-4 py-3" id="feat-1-tab" data-bs-toggle="tab"
+            data-bs-target="#feat-1" type="button" role="tab" aria-controls="feat-1"
+            aria-selected="true">Simple Bookmarking</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-lg-4 py-3 " id="feat-2-tab" data-bs-toggle="tab"
+            data-bs-target="#feat-2" type="button" role="tab" aria-controls="feat-2"
+            aria-selected="false">Speedy Searching</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-lg-4 py-3" id="feat-3-tab" data-bs-toggle="tab"
+            data-bs-target="#feat-3" type="button" role="tab" aria-controls="feat-3"
+            aria-selected="false">Easy Sharing</button>
+        </li>
+      </ul>
+      <div class="tab-content mt-5 pt-5 pt-lg-2 mb-5" id="myTabContent">
+        <section class="tab-pane fade show active" id="feat-1" role="tabpanel" aria-labelledby="feat-1-tab">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative">
+              <img class="img-fluid" src="./assets/illustration-features-tab-1.svg" alt="features 1">
+              <div class="blue-form-left bg-primary"></div>
+            </div>
+            <div class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5">
+              <h3>Bookmark in one click</h3>
+              <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+              <button type="button"
+                class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"><span class="small">More info</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="tab-pane fade" id="feat-2" role="tabpanel" aria-labelledby="feat-2-tab">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mb-5 mt-2 px-4 text-center position-relative overflow-auto">
+              <img class="img-fluid" src="./assets/illustration-features-tab-2.svg" alt="features 2">
+              <div class="blue-form-left bg-primary"></div>
+            </div>
+            <div class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5">
+              <h3>Speedy Searching</h3>
+              <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in velit ab culpa quibusdam aliquam veritatis dolor soluta, odit sint totam.</p>
+              <button type="button"
+                class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"><span class="small">More info</span></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="tab-pane fade" id="feat-3" role="tabpanel" aria-labelledby="feat-3-tab">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative overflow-hidden">
+              <img class="img-fluid" src="./assets/illustration-features-tab-3.svg" alt="features 3">
+              <div class="blue-form-left bg-primary"></div>
+            </div>
+            <div class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5">
+              <h3>Easy Sharing</h3>
+              <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in velit ab culpa quibusdam aliquam veritatis dolor soluta, odit sint totam.</p>
+              <button type="button"
+                class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"><span class="small">More info</span></button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </section>
