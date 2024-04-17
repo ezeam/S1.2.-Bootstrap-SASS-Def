@@ -1,11 +1,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
 $primary: #5265e1;
 $secondary: #fa5959;
 
 body{
 	overflow-x: hidden;
 }
+//Dibujamos las formas azules que hay detrás de las imágenes
   .blue-form-right {
 	  position: absolute;
 	  z-index: -1;
@@ -24,7 +26,7 @@ body{
 	  right: 25%;
     border-bottom-right-radius: 50em;
   }  
-  //CSS para modificar Bootstrap:
+  //CSS para modificar Bootstrap
   .navbar-nav .nav-item .nav-link {
     letter-spacing: 0.1rem;
     font-size: 0.65rem;
@@ -44,4 +46,24 @@ body{
     letter-spacing: 0.1rem;
     font-size: 0.85rem;
   }  
+  .card .img-size {
+    width: 40%;
+  }
+
+  //Escalamos las cards con un media query
+  @media (min-width: 992px) {
+    .card-adapt {
+      & div:nth-child(1) div:nth-child(1) {
+        margin-top: 1rem;
+      }
+  
+      & div:nth-child(2) div:nth-child(1) {
+        margin-top: 5rem;
+      }
+  
+      & div:nth-child(3) div:nth-child(1) {
+        margin-top: 9rem;
+      }
+    }
+  }
   
