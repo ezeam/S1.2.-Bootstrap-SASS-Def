@@ -1,12 +1,14 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+$font-family-sans-serif: "Rubik", sans-serif;
 
 $primary: #5265e1;
 $secondary: #fa5959;
 
+
 body{
 	overflow-x: hidden;
 }
+
 //Dibujamos las formas azules que hay detrás de las imágenes
   .blue-form-right {
 	  position: absolute;
@@ -27,25 +29,25 @@ body{
     border-bottom-right-radius: 50em;
   }  
   //CSS para modificar Bootstrap
-  .navbar-nav .nav-item .nav-link {
+ .navbar-nav .nav-item .nav-link {
     letter-spacing: 0.1rem;
     font-size: 0.65rem;
   }
   
   .nav-tabs .nav-item .nav-link.active {
-    color: $dark;
+    color: dark;
     border-bottom: 0.25rem solid $secondary;
   }
   
   .nav-tabs .nav-item .nav-link {
-    color: $gray-600;
+    color: gray;
     border: none;
   }
   
   .nav .nav-item .nav-link {
     letter-spacing: 0.1rem;
     font-size: 0.85rem;
-  }  
+  } 
   .card .img-size {
     width: 40%;
   }
@@ -65,5 +67,39 @@ body{
         margin-top: 9rem;
       }
     }
+  } 
+  @media (max-width: 272px) {
+    .navbar-toggler {
+      display: none;      
+    }
+    
   }
+
+  @import "../node_modules/bootstrap/scss/bootstrap.scss"; 
+
+  .btn-primary:hover { 
+    color: $primary !important;
+    background-color: $body-bg !important;
+    border-color: $primary !important;
+  }
+  .btn-secondary:hover {
+    color: $secondary !important;
+    background-color: $body-bg !important;
+    border-color: $secondary !important;
+  }
+  .btn-light:hover {
+    color: $dark;
+    background-color: $body-bg;
+    border-color: $dark;
+  }
+  .nav-link:hover{
+    color: $secondary !important;
+  }
+  .accordion-button:hover{
+    color:  $secondary !important;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+ 
   
